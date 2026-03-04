@@ -1,0 +1,66 @@
+2026-03-02 17:43:11,750 - Processing URL: https://www.google.com
+2026-03-02 17:43:11,750 - Requesting URL: https://www.google.com
+2026-03-02 17:43:12,343 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:43:12,347 - Status Code: 200
+2026-03-02 17:45:22,927 - Processing URL: https://www.google.com
+2026-03-02 17:45:22,928 - Requesting URL: https://www.google.com
+2026-03-02 17:45:23,590 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:45:23,594 - Status Code: 200
+2026-03-02 17:45:29,606 - Processing URL: https://www.google.com
+2026-03-02 17:45:29,606 - Requesting URL: https://www.google.com
+2026-03-02 17:45:30,260 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:45:30,260 - Status Code: <Response [200]>
+2026-03-02 17:49:55,372 - Processing URL: https://www.google.com
+2026-03-02 17:49:55,372 - Requesting URL: https://www.google.com
+2026-03-02 17:49:56,008 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:49:56,008 - Status Code: <Response [200]>
+2026-03-02 17:50:07,853 - Processing URL: https://www.google.com
+2026-03-02 17:50:07,853 - Requesting URL: https://www.google.com
+2026-03-02 17:50:08,466 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:50:08,466 - Status Code: 200
+2026-03-02 17:50:29,928 - Processing URL: https://www.google.com
+2026-03-02 17:50:29,928 - Requesting URL: https://www.google.com
+2026-03-02 17:50:30,527 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:50:30,527 - Status Code: 200
+2026-03-02 17:51:05,281 - Processing URL: https://www.google.com
+2026-03-02 17:51:05,281 - Requesting URL: https://www.google.com
+2026-03-02 17:51:05,949 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:51:05,949 - Status Code: 200
+2026-03-02 17:51:05,952 - Page Title: Google
+2026-03-02 17:54:28,479 - Processing URL: https://www.google.com
+2026-03-02 17:54:28,479 - Requesting URL: https://www.google.com
+2026-03-02 17:54:29,158 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:54:29,158 - Status Code: 200
+2026-03-02 17:54:56,136 - Processing URL: https://www.google.com
+2026-03-02 17:54:56,136 - Requesting URL: https://www.google.com
+2026-03-02 17:54:56,758 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:54:56,758 - Status Code: 200
+2026-03-02 17:56:17,831 - Processing URL: https://www.google.com
+2026-03-02 17:56:17,831 - Requesting URL: https://www.google.com
+2026-03-02 17:56:18,476 - URL: https://www.google.com, Status Code: 200
+2026-03-02 17:56:18,477 - Status Code: 200
+2026-03-02 17:56:18,477 - Formatting HTML
+2026-03-02 17:56:18,482 - HTML formatted successfully
+2026-03-02 17:56:18,482 - HTML saved to html.txt
+2026-03-02 18:12:22,888 - Processing URL: https://www.google.com
+2026-03-02 18:12:23,513 - URL: https://www.google.com, Status Code: 200
+2026-03-02 18:12:23,514 - Status Code: 200
+2026-03-02 18:12:23,514 - Formatting HTML
+2026-03-02 18:12:23,519 - HTML formatted successfully
+2026-03-02 18:12:23,520 - HTML saved to html.txt
+2026-03-02 18:12:49,430 - Processing URL: https://www.google.com
+2026-03-02 18:12:50,017 - URL: https://www.google.com, Status Code: 200
+2026-03-02 18:12:50,018 - Status Code: 200
+2026-03-02 18:12:50,018 - Formatting HTML
+2026-03-02 18:12:50,024 - HTML formatted successfully
+2026-03-02 18:12:50,024 - HTML saved to html.txt
+2026-03-02 18:18:34,820 - INFO - Processing URL: https://www.google.com
+2026-03-02 18:18:35,509 - INFO - URL: https://www.google.com, Status Code: 200
+2026-03-02 18:18:35,509 - INFO - Formatting HTML
+2026-03-02 18:18:35,515 - INFO - HTML formatted successfully
+2026-03-02 18:18:35,516 - INFO - HTML saved to html.txt
+2026-03-02 18:19:02,759 - INFO - Processing URL: https://www.google.com
+2026-03-02 18:19:03,368 - INFO - URL: https://www.google.com, Status Code: 200
+2026-03-02 18:19:03,369 - INFO - Formatting HTML
+2026-03-02 18:19:03,376 - INFO - HTML formatted successfully
+2026-03-02 18:19:03,377 - INFO - HTML saved to html.txt
