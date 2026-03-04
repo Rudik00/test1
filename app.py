@@ -38,7 +38,7 @@ def main() -> None:
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[
-            logging.FileHandler("app.log"),
+            logging.FileHandler("logs/app.log"),
             logging.StreamHandler()
         ]
     )
