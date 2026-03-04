@@ -9,7 +9,7 @@ venv/
 html.txt
 
 logs/
-app.log
+logs/*.log
 
 reports/
 html.txt
