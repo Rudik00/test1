@@ -1,5 +1,5 @@
-from requester import request_url
-from saver import save_pretty_html
+from .requester import request_url
+from .saver import save_pretty_html
 
 import argparse
 import requests
