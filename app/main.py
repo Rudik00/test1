@@ -1,16 +1,12 @@
 from app.processor import check_urls
 from app.processor import check_urls
 from app.reporter import save_csv
+from app.loader import load_urls
+
 
 def main():
 
-    urls = [
-        "https://google.com",
-        "https://github.com",
-        "https://stackoverflow.com",
-        "https://bad-site-123123.com"
-    ]
-
+    urls = load_urls("data/urls.txt")
     reports = check_urls(urls)
 
     save_csv(reports)
