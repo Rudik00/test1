@@ -1,14 +1,33 @@
 import requests
-import logging
+import time
+from app.models import URLReport
 
 
-def request_url(url: str, timeout: int = 10) -> requests.Response:
-    """Принимает URL, делает запрос и возвращает response."""
+def check_url(url: str, timeout: int = 10) -> URLReport:
     try:
+        start = time.perf_counter()
+
         response = requests.get(url, timeout=timeout)
-        response.raise_for_status()
-        logging.info(f"URL: {url}, Status Code: {response.status_code}")
-        return response
+
+        end = time.perf_counter()
+        response_time = end - start
+
+        size_bytes = len(response.content)
+
+        return URLReport(
+            url=url,
+            status_code=response.status_code,
+            response_time=response_time,
+            size_bytes=size_bytes,
+            error=None
+        )
+
     except requests.RequestException as e:
-        logging.error(f"Error requesting URL: {url}, Error: {e}")
-        raise
+
+        return URLReport(
+            url=url,
+            status_code=None,
+            response_time=None,
+            size_bytes=None,
+            error=str(e)
+        )
