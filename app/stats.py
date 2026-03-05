@@ -1,38 +1,31 @@
-from app.models import URLReport
+from .models import URLReport
+from statistics import mean, median
 
 
 def calculate_stats(reports: list[URLReport]) -> dict:
 
-    total = len(reports)
+    success = sum(1 for r in reports if r.error is None)
+    failed = sum(1 for r in reports if r.error is not None)
 
-    success = 0
-    failed = 0
+    times = [r.response_time for r in reports if r.response_time is not None]
 
-    response_times = []
-
-    for r in reports:
-
-        if r.error is None:
-            success += 1
-
-            if r.response_time is not None:
-                response_times.append(r.response_time)
-
-        else:
-            failed += 1
-
-    success_rate = success / total if total > 0 else 0
-
-    avg_response = (
-        sum(response_times) / len(response_times)
-        if response_times
-        else 0
-    )
+    if not times:
+        return {
+            "total": len(reports),
+            "success": success,
+            "failed": failed,
+            "avg_time": None,
+            "median_time": None,
+            "min_time": None,
+            "max_time": None,
+        }
 
     return {
-        "total": total,
+        "total": len(reports),
         "success": success,
         "failed": failed,
-        "success_rate": success_rate,
-        "avg_response_time": avg_response
+        "avg_time": mean(times),
+        "median_time": median(times),
+        "min_time": min(times),
+        "max_time": max(times),
     }
